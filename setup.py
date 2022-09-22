@@ -68,6 +68,7 @@ setup(
         "protobuf>=3.20.0",
         "pytest>=7.1.2",
         "docker",
+        "numpy",
     ],
     cmdclass={
         "build_py": FetchBuildProtosCommand,

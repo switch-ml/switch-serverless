@@ -42,6 +42,7 @@ class SpawnActorController:
     def invoke(
         self, actor_name: str, actor_command: str, arg: Any, output_type: Any
     ) -> Any:
+        print(actor_command, actor_name, arg, output_type, "cc")
         return ""
 
     def register(self, actors: List[ActorEntity]):
