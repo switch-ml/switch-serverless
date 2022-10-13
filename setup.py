@@ -52,10 +52,14 @@ setup(
     long_description_content_type="text/markdown",
     zip_safe=False,
     install_requires=[
-        "spawn @ file:///home/venkatesh/repos/devfi/dev/spawn-python-sdk",
         "numpy",
+        "attrs",
+        "google-api",
+        "googleapis-common-protos",
         "grpcio",
         "grpcio-tools",
+        "protobuf",
+        "spawn @ git+https://github.com/eigr-labs/spawn-python-sdk",
     ],
     cmdclass={
         "build_py": FetchBuildProtosCommand,
