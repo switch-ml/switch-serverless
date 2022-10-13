@@ -1,29 +1,28 @@
-# Spawn Python SDK
+# SwitchMl SDK
 
 Python User Language Support for [Spawn](https://github.com/eigr/spawn).
 
 ## Installation via source
 
 ```
-> git clone https://github.com/eigr-labs/spawn-python-sdk.git
-Cloning into 'spawn-python-sdk'...
+> git clone https://github.com/switch-ml/switch-serverless.git
+Cloning into 'switch-serverless'...
 
-> cd spawn-python-sdk
+> cd switch-serverless
 > python3 -m venv env 
 > source ./env/bin/activate
 > python --version     
 Python 3.7.3
 > pip --version 
-> pip install wheel
 > pip install .
 ```
 
 ### Generate installer
 ```
-python setup.py bdist_wheel
+python setup.py install
 ```
 
-### Local install
 ```
-python -m pip install dist/spawn-python-sdk-0.1.0-py3-none-any.whl
+export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
 ```
+

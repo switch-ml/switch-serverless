@@ -1,0 +1,8 @@
+attrs
+google-api
+googleapis-common-protos
+grpcio
+grpcio-tools
+numpy
+protobuf
+spawn@ git+https://github.com/eigr-labs/spawn-python-sdk

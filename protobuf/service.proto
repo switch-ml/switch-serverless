@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package switchml;
+
+
+message Parameters {
+    repeated bytes tensors = 1;
+    string tensor_type = 2;
+}
+
+message FitRes {
+    Parameters parameters = 2;
+    int64 num_examples = 3;
+    map<string, float> metrics = 4;
+}
+
+message EvalRes {
+    float loss = 1;
+    int64 num_examples = 2;
+    map<string, float> metrics = 3;
+}
+
+message WeightsInvocation {
+    FitRes fit_res = 1;
+    EvalRes eval_res = 2;
+}
+
+message WeightsResponse {
+    Parameters parameters = 1;
+    map<string, int64> config = 2;
+}
